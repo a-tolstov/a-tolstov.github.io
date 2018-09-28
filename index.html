@@ -13,7 +13,7 @@
 			var element = document.getElementById("Timer");
 			if (elapsed < 0)
 			{
-				element.innerHTML = "VANISHED"
+				element.innerHTML = "VANISHED?"
 				element.style = "color: red;";
 			}
 			else
@@ -24,7 +24,7 @@
 				element.innerHTML = hours.padStart(2, '0') + ':' + minutes.padStart(2, '0') + ':' + secs.padStart(2, '0');
 			}
 		}
-		setInterval(onTick, 100);
+		setInterval(onTick, 300);
 		onTick();
 	</script>
 	<style>
